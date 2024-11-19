@@ -127,7 +127,7 @@ body{
 
 @media (max-width: 768px) {
     .home {
-        background-position: center -145px; /* Move the background image upwards */
+        background-position: center -115px; /* Move the background image upwards */
         background-size: 97%;
     }
 }
