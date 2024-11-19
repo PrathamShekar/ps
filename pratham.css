@@ -94,9 +94,9 @@ body{
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 50px;
         right: 10%;
-        background-color: black;
+        background-color:#000000 ;
         padding: 10px;
         border-radius: 5px;
     }
@@ -124,11 +124,11 @@ body{
     align-items: center;
     padding: 7px 10% 0;
 }
-/* Media query for smaller screens */
+
 @media (max-width: 768px) {
     .home {
-        background: none; /* Removes the background */
-        background-color: black; /* Keeps the black background color */
+        background-position: center -180px; /* Move the background image upwards */
+        background-size: 97%;
     }
 }
 .home-content
@@ -169,6 +169,62 @@ body{
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
 }
+
+/* Default styles */
+.home-content h1 {
+    font-size: 3rem;
+}
+
+.home-content h2 {
+    font-size: 2rem;
+}
+
+.home-content h3 {
+    font-size: 1.5rem;
+}
+
+.home-content h4 {
+    font-size: 1.2rem;
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .home-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .home-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .home-content h4 {
+        font-size: 1rem;
+    }
+}
+
+/* Styles for very small screens */
+@media screen and (max-width: 480px) {
+    .home-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .home-content h3 {
+        font-size: 1rem;
+    }
+
+    .home-content h4 {
+        font-size: 0.8rem;
+    }
+}
+
 .icones a {
     display: inline-flex;
     justify-content: center;
@@ -227,33 +283,7 @@ body{
          transform: translateY(-40px); /* Moves the button up */
      }
  }
- 
 
-
-.about{
-    display: relative;
-    align-items: center;
-    gap: 1.5rem;
-    position: relative;
-    width: 100%;
-    justify-content: space-between;
-    height: 100vh;
-    background: url(nasa.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-    padding: 10px 10% 0;
-}
-
-
-.about-text{
-    font-size: 20px;
-    align-items: center;
-    font-weight: 700; 
-    opacity: 0;
-    animation: slideLeft 5s ease forwards;
-    animation-delay: .7s;
-}
 
 .skills {
     background-color: #121212;
@@ -328,10 +358,15 @@ body{
 
 @media (max-width: 768px) {
     .skills-box {
-        width: 100%;
-        min-height: 350px; /* Ensures vertical length when stacked */
+        width: 90%; /* Ajusta a largura para ocupar mais espaço */
+        margin: 10px 0; /* Espaçamento entre as caixas */
+        padding: 25px; /* Adiciona espaçamento interno */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Dá destaque */
+        border-radius: 10px; /* Bordas arredondadas */
     }
     .skills-text {
+        margin-bottom: 20px;
+        display: flex;
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center-align when stacked */
        
@@ -423,6 +458,31 @@ body{
     }  
 }
 
+.about{
+    display: relative;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(nasa.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    padding: 10px 10% 0;
+}
+
+
+.about-text{
+    font-size: 20px;
+    align-items: center;
+    font-weight: 700; 
+    opacity: 0;
+    animation: slideLeft 5s ease forwards;
+    animation-delay: .7s;
+}
+
 .about-text {
     max-width: 800px;
     margin: 0 auto;
@@ -440,7 +500,7 @@ body{
 /* Responsive Design */
 @media (max-width: 1024px) {
     .about-text {
-        font-size: 17px;
+        font-size: 14px;
         max-width: 100%; /* Adjust width for smaller screens */
         padding: 15px; /* Reduce padding for smaller screens */
     }
