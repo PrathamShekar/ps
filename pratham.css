@@ -127,7 +127,7 @@ body{
 
 @media (max-width: 768px) {
     .home {
-        background-position: center -180px; /* Move the background image upwards */
+        background-position: center -160px; /* Move the background image upwards */
         background-size: 97%;
     }
 }
@@ -544,7 +544,7 @@ footer .rodape-info {
 
 footer .rodape-info h4 {
     margin: 0;
-    font-size: 18px;
+    font-size: 12px;
 }
 
 footer .rodape-info img {
