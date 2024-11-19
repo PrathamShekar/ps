@@ -100,6 +100,7 @@ body{
         padding: 10px;
         border-radius: 5px;
     }
+}
 
     .navbar.show {
         display: flex;
@@ -107,6 +108,19 @@ body{
 
     .hamburger {
         display: flex;
+    }
+
+    .navbar a, /* Assuming the links inside the navbar */
+    .navbar span, /* Any other span text inside */
+    .navbar p { /* Adjust for paragraph tags */
+        font-size: 0.8rem; /* Smaller font for hamburger menu */
+}
+
+@media (max-width: 480px) {
+    .navbar a,
+    .navbar span,
+    .navbar p {
+        font-size: 0.7rem; /* Even smaller for very small screens */
     }
 }
 
@@ -313,7 +327,6 @@ body{
 }
 
 .skills-box {
-
     background-color: #1c1c1c;
     border: 2px solid #0ef;
     border-radius: 8px;
@@ -354,6 +367,9 @@ body{
     .skills-box {
         width: calc(50% - 20px);
     }
+    .skills-text {
+        font-size: 12px; /* Smaller font for medium screens */
+    }
 }
 
 @media (max-width: 768px) {
@@ -367,11 +383,18 @@ body{
        
     }
     .skills-text {
+        font-size: 10px; /* Reduce font size further for smaller screens */
         margin-bottom: 20px;
         display: flex;
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center-align when stacked */
        
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-text {
+        font-size: 8px; /* Even smaller text for very small screens */
     }
 }
 
