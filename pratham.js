@@ -1,6 +1,6 @@
 // string animations
 var typed = new Typed(".text",{
-        strings: ["a Programmer", "a Computer Engineer", "a IT Engineer", "a Software Developer"],
+        strings: ["a Programmer", "a Computer Engineer", "an IT Engineer", "a Software Developer"],
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,
