@@ -71,7 +71,7 @@ body{
 
 @media (max-width: 768px) {
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     h4 {
@@ -94,10 +94,11 @@ body{
         display: none;
         flex-direction: column;
         position: absolute;
+        justify-content:space-evenly;
         top: 50px;
         right: 10%;
-        background-color:#000000 ;
-        padding: 10px;
+        background-color:#000000;
+        padding: 20px;
         border-radius: 5px;
     }
 }
@@ -355,7 +356,7 @@ body{
 }
 
 .skills-box ul li::before {
-    content: '=='; /* Unicode or character for the checkmark */
+    content: '✔'; /* Unicode or character for the checkmark */
     color: #0ef; /* Checkmark color */
     font-size: 14px;
     position: absolute; /* Position relative to the li */
