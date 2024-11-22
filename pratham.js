@@ -54,3 +54,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const educationItems = document.querySelectorAll(".education-item");
+
+    // Adiciona a classe `show` com atraso
+    educationItems.forEach((item, index) => {
+        setTimeout(() => {
+            item.classList.add("show");
+        }, index * 200); // Atraso incremental de 200ms por item
+    });
+});
+

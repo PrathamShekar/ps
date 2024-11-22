@@ -77,6 +77,32 @@ body{
     h4 {
         font-size: 1.2rem;
     }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        justify-content: space-evenly;
+        top: 50px;
+        right: 10%;
+        background-color: #000000;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar a,
+    .navbar span,
+    .navbar p {
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -87,41 +113,17 @@ body{
     h4 {
         font-size: 1rem;
     }
-}
 
-@media (max-width: 768px) {
-    .navbar {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        justify-content:space-evenly;
-        top: 50px;
-        right: 10%;
-        background-color:#000000;
-        padding: 20px;
-        border-radius: 5px;
-    }
-}
-
-    .navbar.show {
-        display: flex;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
-    .navbar a, /* Assuming the links inside the navbar */
-    .navbar span, /* Any other span text inside */
-    .navbar p { /* Adjust for paragraph tags */
-        font-size: 0.8rem; /* Smaller font for hamburger menu */
-}
-
-@media (max-width: 480px) {
     .navbar a,
     .navbar span,
     .navbar p {
-        font-size: 0.7rem; /* Even smaller for very small screens */
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
     }
 }
 
@@ -314,6 +316,7 @@ body{
 }
 
 .skills-text {
+    padding-top: 30px;
     font-size: 14px;
     align-items: center;
     font-weight: 700;
@@ -338,12 +341,19 @@ body{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     min-width: 300px;
     flex: 1 1 calc(50% - 20px); /* Adjust sizing flexibly */
+    max-height: 300px; /* Set a max-height to prevent the box from growing */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
 }
 
 .skills-box ul {
     list-style: none; /* Removes default bullets */
     padding-left: 0; /* Ensures no extra space on the left */
     margin: 0; /* Removes unnecessary margin */
+}
+
+.skills-box-content {
+    max-height: 300px; /* Set a maximum height to trigger scrolling */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
 }
 
 .skills-box ul li {
@@ -364,6 +374,24 @@ body{
     top: 50%; /* Vertically center */
     transform: translateY(-50%); /* Adjust for perfect centering */
 }
+
+/* Customize the scrollbar track (background) */
+.skills-box::-webkit-scrollbar {
+    width: 8px; /* Adjust the width of the scrollbar */
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+.skills-box::-webkit-scrollbar-thumb {
+    background-color: #0ef; /* Set the thumb color to blue */
+    border-radius:50px; /* Optional: rounded corners for the thumb */
+}
+
+/* Optional: Customize the scrollbar track (the area the thumb slides in) */
+.skills-box::-webkit-scrollbar-track {
+    background-color: #333; /* Dark background for the track */
+    border-radius: 50px; /* Optional: rounded corners for the track */
+}
+
 @media (max-width: 1024px) {
     .skills-box {
         width: calc(50% - 20px);
@@ -399,28 +427,69 @@ body{
     }
 }
 
-.education{
-    display: relative;
-    align-items: center;
-    gap: 1.5rem;
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     position: relative;
     width: 100%;
-    justify-content: space-between;
     height: 100vh;
-    background: url(lua.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-    padding: 10px 10% 0;
+    background: url(lua.jpg) no-repeat center center/cover;
+    padding: 10px 5%;
 }
 
-.education-text{
-    font-size: 13px;
-    align-items: center;
-    font-weight: 700; 
+.education h2 {
+    padding-left: 10px;
+    padding-top: 30px;
+    color: #0ef;
+    font-size: 1.4rem;  /* Reduced size */
+    font-weight: 700;
+    margin-bottom: 1rem;  /* Reduced spacing */
+}
+
+#sectionAbout h2{
+    padding-bottom: 30px;
+}
+
+.education-item {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 12px;  /* Reduced padding */
+    border-radius: 6px;  /* Slightly smaller border radius */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);  /* Reduced shadow */
+    transition: transform 0.3s ease;
+}
+
+.education-item h3 {
+    margin: 0;
+    font-size: 1.1rem;  /* Slightly smaller font size */
+    font-weight: 700;
+}
+
+.education-item span {
+    display: block;
+    font-size: 0.85rem;  /* Slightly smaller font size */
+    font-weight: 400;
+    margin-top: 0.3rem;  /* Reduced margin */
+}
+
+.education-item p {
+    margin-top: 0.3rem;  /* Reduced margin */
+    font-size: 0.9rem;  /* Slightly smaller font size */
     opacity: 0;
     animation: slideLeft 5s ease forwards;
-    animation-delay: .7s;
+    animation-delay: 0.7s;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 
@@ -485,6 +554,7 @@ body{
 }
 
 .about{
+
     display: relative;
     align-items: center;
     gap: 1.5rem;
@@ -501,6 +571,7 @@ body{
 
 
 .about-text{
+    
     font-size: 20px;
     align-items: center;
     font-weight: 700; 
