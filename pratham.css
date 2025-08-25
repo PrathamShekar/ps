@@ -172,7 +172,7 @@ body{
 }
 .home-content h1  
 {
-    font-size: 56px;
+    font-size: 40px;
     font-weight: 700;
     margin: -3px 0;
     opacity: 0;
@@ -193,7 +193,7 @@ body{
 }
 
 .home-content h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .home-content h3 {
