@@ -1,263 +1,388 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pratham Shekar Manicant — Computer Engineering portfolio"
+    />
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device, initial-scale=1.0">
-    <link rel="stylesheet" href="pratham.css"> <!-- Connects Html with css-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="pratham.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=4" />
+    <link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png?v=4" />
+    <link rel="apple-touch-icon" href="favicon-avatar.png?v=4" />
+
     <title>Pratham Shekar Manicant</title>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </head>
 
-<body>
+  <body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+      <a href="#sectionHome" class="logo">Pratham Shekar</a>
 
-    <header class ="header" id="navbarHide">
+      <nav class="navbar" id="navbar" aria-label="Main navigation">
+        <a href="#sectionHome">Home</a>
+        <a href="#sectionSkills">Skills</a>
+        <a href="#sectionProjects">Projects</a>
+        <a href="#sectionEducation">Education</a>
+        <a href="#sectionAbout">About</a>
+        <a href="#sectionContact">Contact</a>
+      </nav>
 
-        <i href="" class="logo">Pratham's Portfolio.</i>
-        
-        <nav class="navbar" id ="navbar">
-            <a href="" style="--i:1" >Home</a>
-            <a href="#" style="--i:2" onclick="scrollToSection('sectionSkills')">Skills</a> <!-- target posso colocar destino para abrir em uma outra aba-->
-            <a href="#" style="--i:3" onclick="scrollToSection('sectionEducation')">Education</a>
-            <a href="#" style="--i:4" onclick="scrollToSection('sectionAbout')">About</a>
-            <a href="#" style="--i:4" onclick="scrollToSection('sectionContact')">Contact</a>
-        </nav>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+      <button
+        class="hamburger"
+        id="hamburger"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
-   
-    <section class="home" id="sectionHome">
-        <div class="home-content">  
-            <br>
-            <h3>Hello, It's Me</h3>
-            <br>
-            <h1>Pratham Shekar Manicant</h1>
-            <br><br>
-            <hr size="5" width="100%" lign="center" noshade color="#0ef">
-            <br><br>
-            <h1>And I'm <span class="text"></h3>
-            <br>
-            <h2><br>Currently studying Computer Engineering at Instituto Superior de Ciências e Tecnologia de Moçambique (ISCTEM), translates to Higher Institute of Sciences and Technology of Mozambique.
-            <br><br>
-            <h4><br> As a passionate coder and technology enthusiast, I thrive on diving deep into the world of algorithms, software development, and exploring new technologies.
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="icones">  
-                <a href="https://www.facebook.com/pratham.shekar.1?mibextid=LQQJ4d" target="_blank" title="Facebook" style="--i:6"><i class='bx bxl-facebook'></i></a> 
-                <a href="https://www.instagram.com/poxapratham/profilecard/?igsh=MWkweXZydW05eHJjag==" target="_blank" title="Instagram" style="--i:7"><i class='bx bxl-instagram' ></i> </a>
-                <a href="https://wa.me/258860428627" target="_blank" title="Whatsapp" style="--i:8"><i class='bx bxl-whatsapp'></i> </a>
-                <a href="mailto:pratham.shekar1@gmail.com?subject=Hello&body=I%20would%20like%20to%20connect!" target="_blank" title="Gmail" style="--i:9"> <i class='bx bxl-gmail'></i>
-                <a href="https://www.linkedin.com/in/pratham-shekar-manicant-bbb182320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_apphttps://www.linkedin.com/in/pratham-shekar-manicant-bbb182320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" title="LinkedIn" style="--i:9"><i class='bx bxl-linkedin' ></i></a>
-                <a href="#" style="--i:10" onclick="scrollToSection('sectionAbout')"><i class='bx bxs-chevrons-down'></i></a>
-            </div>
-        </div>
-    </section>
 
-    <section class="skills" id ="sectionSkills">
-        <h2>My Skills</h2>
-        <div class="skills-text">
-            <div class="skills-box">
-                <h4>Languages:</h4>
-                <br>
-                <ul>
-                    <li>Portuguese - Native</li>
-                    <li>English - Level C1 (Advanced)</li>
-                    <li>Hindi (Limited Working Proficiency)</li>
-                    <li>Gujarati (Limited Working Proficiency)</li>
-                </ul>
-            </div>
+    <main>
+      <!-- Home -->
+      <section class="hero section" id="sectionHome">
+        <div class="hero-copy">
+          <p class="eyebrow">Hello, It's Me</p>
+          <h1>Pratham Shekar Manicant</h1>
+          <p class="role">And I'm a <span>Computer Engineer</span></p>
 
-            <div class="skills-box">
-                <h4>Soft Skills:</h4>
-                <br>
-                <ul>
-                    <li>Attention to detail</li>
-                    <li>POS and Payment Processing</li>
-                    <li>Customer-First Approach</li>
-                    <li>Adaptability</li>
-                    <li>Time Management</li>
-                    <li>Communication</li>
-                    <li>Computer Literacy</li>
-                    <li>Interpersonal Skills</li>
-                    <li>Organizational Skills</li>
-                    <li>Elevator Pitches</li>
-                </ul>
-            </div>
-            
-            <div class="skills-box">
-                <h4>Programming Languages:</h4>
-                <br>
-                <ul>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>C</li>
-                    <li>SQL PLUS</li>
-                    <li>PHP</li>
-                    <li>HTML</li>
-                    <li>JavaScript</li>
-                    <li>Cascading Style Sheets(CSS)</li>
-                    <li>OCAML</li>        
-                </ul>
-            </div>
+          <p class="intro">
+            Finalist in Computer Engineering at Instituto Superior de
+            Ciências e Tecnologia de Moçambique (ISCTEM) - the Higher
+            Institute of Sciences and Technology of Mozambique.
+          </p>
+          <p class="intro">
+              I'm a developer, and data & AI enthusiast, driven by curiosity for
+              algorithms, software development, and emerging technologies. I enjoy
+              turning complex problems into clean, practical solutions.
+          </p>
 
-            <div class="skills-box">
-                <h4>Technical Skills:</h4>
-                <br>
-                <ul>
-                    <li>Object-Oriented Programming</li>
-                    <li>Database Management System</li>
-                    <li>Oracle Database</li>
-                    <li>Algorithm Analysis</li>
-                    <li>Operating Systems</li>
-                    <li>Computer Architecture</li>
-                    <li>Front-End Development</li>
-                    <li>Back-End Development</li>
-                    <li>Data Structures and Algorithms</li>
-                    <li>Innovation Development</li>
-                    <li>Design Thinking</li>
-                    <li>Artificial Intelligence Fundamentals</li>
-                    <li>Data Science Fundamentals</li>
-                    <li>Data Visualization</li> 
-                </ul>
-            </div>
-
-        </div>  
-    </section>
-
-    <section class="education" id="sectionEducation">  
-        <h2 style="color:#0ef">Education</h2>
-        <div class="education-item">
-            <h3>Inhambane, Mozambique <span>2015 - 2020</span></h3>
-            <p>Emília Daússe Secondary School</p>
-        </div>
-        <div class="education-item">
-            <h3>Final year of Licentiate Degree</h3>
-            <p>Computer Engineering at ISCTEM</p>
-        </div>
-    </section>
-
-
-    <section class="education" id="sectionEducation">  
-        
-        <h2 style="color:#0ef">Licenses and Certifications</h2>
-
-        <div class="education-item">
-            <h3>Vodacom - Mozambique</h3>
-            <p>1st Place M-Pesa FINCKATHON 2nd Edition</p>
+          <div class="social-links" aria-label="Social links">
+            <a
+              href="https://wa.me/258860428627"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="WhatsApp"
+            ><i class="bx bxl-whatsapp"></i></a>
+            <a
+              href="mailto:pratham.shekar1@gmail.com?subject=Hello&body=I%20would%20like%20to%20connect!"
+              aria-label="Gmail"
+            ><i class="bx bxl-gmail"></i></a>
+            <a
+              href="https://www.linkedin.com/in/pratham-shekar-manicant-bbb182320"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+            ><i class="bx bxl-linkedin"></i></a>
+            <a
+              href="https://github.com/PrathamShekar"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub"
+            ><i class="bx bxl-github"></i></a>
+          </div>
         </div>
 
-        <div class="education-item">
-            <h3>Data Science Academy - Brazil</h3>
-            <p> Fundamentals of Data Science and Artificial Intelligence</p>
+        <div class="avatar-frame">
+          <img
+            src="pratham-avatar.webp"
+            alt="Pratham Shekar Manicant"
+            class="avatar"
+          />
         </div>
-
-        <div class="education-item">
-            <h3>Cisco Networking Academy</h3>
-            <p>Introduction to Data Science</p>
-        </div>
-
-        <div class="education-item">
-            <h3>Harvard Online Courses</h3>
-            <p>CS50: Introduction to Computer Science</p>
-        </div>
-
-        <div class="education-item">
-            <h3>Institute of Languages</h3>
-            <p>English Level C1 (Advanced)</p>
-        </div>
-
-        <div class="education-item">
-            <h3>Cursa - Free Online Courses with Certificate</h3>
-            <p>Segurança de Informação por Password</p>
-        </div>
-
-    </section>
-  
-
-    <section class ="about" id="sectionAbout">
-        <br>
-        <br>
-        <h2 style="color:#0ef">About Me</h2>
-        <br>
-        <div class="about-text">
-            <br>
-            <p>
-                I’m 22 years old, born on April 5 in the lovely city of Inhambane, Mozambique, and now living in Maputo, Mozambique.
-            </p>
-            <p>
-                My journey into Computer Engineering has been fueled by a curiosity for understanding how things work and a drive to create solutions that make a difference.
-                I'm passionate about coding, football, and cars.
-            </p>
-            <p>
-                I enjoy creating useful and simple solutions, solving problems, and improving how things work. I value collaboration, stay calm and professional even in challenging situations.
-            </p>
-            <p>
-                Exploring new technologies and tackling tricky problems keeps me motivated. Every project I undertake reflects my skills, creativity, and determination. My portfolio is a testament to my dedication and readiness to contribute to the tech world.
-            </p>
-        </div> 
-    </section>
-
-    <section class="contact" id="sectionContact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-
-        <form action="https://formspree.io/f/xwpknnrj" method="post" id="form">
-
-            <div class="input-box">
-            
-                <div class="input-field">
-                    <input type="text" placeholder="Full Name" name="Nome" id="nome" required>
-                    <span class="focus"></span>
-                </div>
-    
-                <div class="input-field">
-                    <input type="email" name="Email" id="email" placeholder="Email Address" required>
-                    <span class="focus"></span>
-                </div>
-            </div>
-    
-            <div class="input-box">
-                
-                <div class="input-field">
-                    <input type="number" name="Numero" id="numero" placeholder="Mobile Number" required>
-                    <span class="focus"></span>
-                </div>
-    
-                <div class="input-field">
-                    <input type="text" name="Subject" id="subject" placeholder="Email Subject" required>
-                    <span class="focus"></span>
-                </div>
-            </div>
-
-            <div class="textarea-field">
-                <textarea name="Mensagem" id="mensagem" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <span class="focus"></span>
-            </div>
-
-            <div class="btn-box btns">
-                <button type="submit" class="btn">Submit</button>
-            </div>
-        </form>
-
       </section>
 
+      <!-- Skills: add or remove one <li> item inside the relevant card. -->
+      <section class="section skills" id="sectionSkills">
+        <p class="eyebrow">What I bring</p>
+        <h2>My Skills</h2>
 
-    <footer class="rodape">
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Languages</h3>
+            <ul class="skill-list">
+              <li>Portuguese - Native</li>
+              <li>English - Level C1 (Advanced)</li>
+              <li>Hindi (Limited Working Proficiency)</li>
+              <li>Gujarati (Limited Working Proficiency)</li>
+            </ul>
+          </article>
 
-        <button id="top-button" onclick="scrollToTop()">
-            <img src="up.png">
-        </button>
+          <article class="skill-card">
+            <h3>Interpersonal Skills</h3>
+            <ul class="skill-list">
+              <li>Diligence, competence, and loyalty</li>
+              <li>Flexibility and versatility</li>
+              <li>Time management and organization</li>
+              <li>Honesty and trustworthiness</li>
+              <li>Attention to detail</li>
+              <li>Continuous learning</li>
+              <li>Communication</li>
+              <li>Teamwork</li>
+              <li>Problem-solving</li>
+              <li>Adaptability</li>
+              <li>Professional responsibility</li>
+            </ul>
+          </article>
 
-       <div class="rodape-info">
-            <h4>Copyright © 2026 Pratham Manicant, All rights reserved</h4>
-       </div>
+          <article class="skill-card">
+            <h3>Programming &amp; Design</h3>
+            <ul class="skill-list">
+              <li>Java</li>
+              <li>JavaFX</li>
+              <li>React</li>
+              <li>Node js</li>
+              <li>Python</li>
+              <li>SQL Plus</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Figma</li>
+              <li>Canva</li>
+            </ul>
+          </article>
 
+          <article class="skill-card">
+            <h3>Databases &amp; Version Control</h3>
+            <ul class="skill-list">
+              <li>Oracle Database</li>
+              <li>Firebase</li>
+              <li>Supabase</li>
+              <li>Database Management System</li>
+              <li>Git</li>
+              <li>GitHub</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>AI &amp; Development Tools</h3>
+            <ul class="skill-list">
+              <li>Antigravity IDE</li>
+              <li>Claude Code</li>
+              <li>Codex</li>
+              <li>Cursor</li>
+              <li>Freebuff</li>
+              <li>Strategic and advanced use of AI tools in development</li>
+              <li>Solid understanding of generated code and its technical implications</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Technical &amp; Professional Tools</h3>
+            <ul class="skill-list">
+              <li>Object-Oriented Programming</li>
+              <li>Algorithm Analysis</li>
+              <li>Operating Systems</li>
+              <li>Computer Architecture</li>
+              <li>Front-End Development</li>
+              <li>Back-End Development</li>
+              <li>Data Structures and Algorithms</li>
+              <li>Innovation Development</li>
+              <li>Design Thinking</li>
+              <li>Artificial Intelligence Fundamentals</li>
+              <li>Data Science Fundamentals</li>
+              <li>Data Visualization</li>
+              <li>Word</li>
+              <li>PowerPoint</li>
+              <li>Excel</li>
+              <li>Outlook</li>
+              <li>Teams</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Projects: duplicate a project-card to add a new project. -->
+      <section class="section projects" id="sectionProjects">
+        <p class="eyebrow">My work</p>
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <p class="project-number">01</p>
+            <h3>M-Djo</h3>
+            <p>Voice assistant for financial inclusion - winning prototype at M-Pesa FINCKATHON 2025.</p>
+          </article>
+
+          <article class="project-card">
+            <p class="project-number">02</p>
+            <h3>Firebase Web Chat</h3>
+            <p>Real-time chat application with end-to-end encryption.</p>
+            <a href="https://firebase-webchat.pratham-shekar1.workers.dev/" target="_blank" rel="noreferrer">Visit website <span>↗</span></a>
+          </article>
+
+          <article class="project-card">
+            <p class="project-number">03</p>
+            <h3>Pratham's Portfolio</h3>
+            <p>Personal portfolio showcasing projects, technical skills, and academic background.</p>
+            <a href="https://prathamshekar.dev" target="_blank" rel="noreferrer">Visit website <span>↗</span></a>
+          </article>
+
+          <article class="project-card">
+            <p class="project-number">04</p>
+            <h3>Trendy Moz</h3>
+            <p>Streetwear and e-commerce platform.</p>
+            <a href="https://trendymoz.com" target="_blank" rel="noreferrer">Visit website <span>↗</span></a>
+          </article>
+
+          <article class="project-card">
+            <p class="project-number">05</p>
+            <h3>biznu</h3>
+            <p>SaaS platform for store owners to manage inventory, sales, and customers in real time.</p>
+            <a href="https://biznu.prathamshekar.dev" target="_blank" rel="noreferrer">Visit website <span>↗</span></a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="section timeline-section" id="sectionEducation">
+        <p class="eyebrow">Background</p>
+        <h2>Education</h2>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div>
+              <h3>Inhambane, Mozambique</h3>
+              <p>Emília Daússe Secondary School</p>
+            </div>
+            <time>2015 - 2020</time>
+          </article>
+
+          <article class="timeline-item">
+            <div>
+              <h3>Final year of Licentiate Degree</h3>
+              <p>Computer Engineering at ISCTEM</p>
+            </div>
+            <time>2023 - 2027</time>
+          </article>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section class="section timeline-section" id="sectionCertifications">
+        <p class="eyebrow">Continuous learning</p>
+        <h2>Licenses and Certifications</h2>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div>
+              <h3>AI Fluency: Framework &amp; Foundations</h3>
+              <p>Anthropic (Skilljar)</p>
+            </div>
+            <time>2026</time>
+          </article>
+          <article class="timeline-item">
+            <div>
+              <h3>Claude Code 101</h3>
+              <p>Anthropic (Skilljar)</p>
+            </div>
+            <time>2026</time>
+          </article>
+          <article class="timeline-item">
+            <div>
+              <h3>TechStart - Artificial Intelligence for Everyone</h3>
+              <p>Vodacom Group &amp; Microsoft Learn</p>
+            </div>
+            <time>2026</time>
+          </article>
+          <article class="timeline-item">
+            <div>
+              <h3>Claude 101</h3>
+              <p>Anthropic (Skilljar)</p>
+            </div>
+            <time>2026</time>
+          </article>
+          <article class="timeline-item">
+            <div>
+              <h3>1st Place M-Pesa FINCKATHON 2nd Edition</h3>
+              <p>Vodacom Mozambique</p>
+            </div>
+            <time>2025</time>
+          </article>
+          <article class="timeline-item">
+            <div>
+              <h3>Fundamentals of Data Science and Artificial Intelligence</h3>
+              <p>Data Science Academy</p>
+            </div>
+            <time>2025</time>
+          </article>
+          <article class="timeline-item">
+            <div>
+              <h3>Introduction to Data Science</h3>
+              <p>Cisco Networking Academy</p>
+            </div>
+            <time>2025</time>
+          </article>
+          <article class="timeline-item">
+            <div>
+              <h3>Information Security by Password</h3>
+              <p>Cursa</p>
+            </div>
+            <time>2023</time>
+          </article>
+          <article class="timeline-item">
+            <div>
+              <h3>CS50: Introduction to Computer Science</h3>
+              <p>Harvard University (Online)</p>
+            </div>
+            <time>2022</time>
+          </article>
+          <article class="timeline-item">
+            <div>
+              <h3>English Level C1 (Advanced)</h3>
+              <p>Institute of Languages, Inhambane</p>
+            </div>
+            <time>2021</time>
+          </article>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section about" id="sectionAbout">
+        <p class="eyebrow">A little more</p>
+        <h2>About Me</h2>
+        <div class="about-copy">
+          <p>I’m 22 years old, born on April 5 in the lovely city of Inhambane, Mozambique, and now living in Maputo, Mozambique.</p>
+          <p>My journey into Computer Engineering has been fueled by a curiosity for understanding how things work and a drive to create solutions that make a difference. I'm passionate about coding, football, and cars.</p>
+          <p>I enjoy creating useful and simple solutions, solving problems, and improving how things work. I value collaboration, stay calm and professional even in challenging situations.</p>
+          <p>Exploring new technologies and tackling tricky problems keeps me motivated. Every project I undertake reflects my skills, creativity, and determination. My portfolio is a testament to my dedication and readiness to contribute to the tech world.</p>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact" id="sectionContact">
+        <p class="eyebrow">Let's connect</p>
+        <h2>Contact Me</h2>
+
+        <form action="https://formspree.io/f/xwpknnrj" method="post">
+          <div class="form-row">
+            <label>Full Name<input type="text" placeholder="Your full name" name="Nome" required /></label>
+            <label>Email Address<input type="email" name="Email" placeholder="you@email.com" required /></label>
+          </div>
+          <div class="form-row">
+            <label>Mobile Number<input type="number" name="Numero" placeholder="Your mobile number" required /></label>
+            <label>Email Subject<input type="text" name="Subject" placeholder="How can I help?" required /></label>
+          </div>
+          <label>Your Message<textarea name="Mensagem" rows="7" placeholder="Write your message here" required></textarea></label>
+          <button type="submit" class="button">Submit message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Copyright © 2026 Pratham Shekar Manicant, All rights reserved</p>
+      <button type="button" class="back-to-top" id="top-button" aria-label="Back to top">↑</button>
     </footer>
-    <script src ="pratham.js"></script>  <!--Connects html with JavaScript-->
 
-</body>
-</html> 
+    <script src="pratham.js"></script>
+  </body>
+</html>
